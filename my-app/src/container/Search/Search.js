@@ -6,9 +6,8 @@ import './Search.css'
 
 import { connect } from 'react-redux';
 import { fetchPlanetsService, fetchPlanetDataService } from "../../services/starwarsService";
-import classNames from 'classnames/bind';
-// import styles from './Search.css';
-// let cx = classNames.bind(styles);
+ 
+ 
 class Search extends React.Component {
     constructor(props) {
         super(props);
@@ -53,14 +52,16 @@ class Search extends React.Component {
         ev.preventDefault();
         const { planetData } = this.props
 
-
-        if (planetData) {
-            let tempArray = planetData.filter(data => data.name.indexOf(ev.target.value) > -1)
-            if (tempArray) {
-                this.setState({ matchedPlanet: tempArray })
+         
+            if (planetData) {
+                let tempArray = planetData.filter(data => data.name.indexOf(ev.target.value) > -1)
+                if (tempArray) {
+                    this.setState({ matchedPlanet: tempArray })
+                }
+    
             }
-
-        }
+         
+       
     }
 
     handleLogout() {
@@ -231,7 +232,8 @@ const mapStateToProps = (state) => {
     return {
 
         planetData: state.app.planetData.results,
-
+        userData:state.app.userDetails.username
+        
     }
 }
 const mapDispatchToProps = (dispatch) => {

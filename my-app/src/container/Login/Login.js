@@ -46,7 +46,10 @@ handleSubmit(event) {
            
        if(userData.some(validateUser)) 
        {
-        this.props.loginSucess();
+         let userDetails={};
+         userDetails.username=this.state.username
+         userDetails.password=this.state.password
+        this.props.loginSucess(userDetails);
         this.props.history.push("/search")
 
        }
@@ -125,7 +128,7 @@ const mapStateToProps=(state)=>{
         return {
     
     
-            loginSucess: () => dispatch({ type: "LOGIN_SUCCESS" }),
+            loginSucess: (payload) => dispatch({ type: "LOGIN_SUCCESS",payload }),
     
     
         }

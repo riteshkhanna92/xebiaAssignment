@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 export class App extends React.Component {
 
   componentDidMount() {
+    
     fetchUserService()
       .then(res => {
  

@@ -2,7 +2,8 @@ import  {ActionTypes} from './actions'
 const InitialState={
     usersData:"",
     isAuthenticated:false,
-    planetData:""
+    planetData:"",
+    userDetails:""
    
      
 }
@@ -24,13 +25,14 @@ const appReducer=(state=InitialState,action)=>{
                 return {
                     ...state,
                     isAuthenticated:true,
+                    userDetails:action.payload
                    
                 }
         case ActionTypes.LOGOUT_SUCCESS:
                  
                 return {
                     ...state,
-                    usersData:"",
+                    
                     isAuthenticated:false,
                    
                 }
