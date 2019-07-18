@@ -1,0 +1,12 @@
+.header-con{display: flex;padding: 0.25em 0 0.75em;border-bottom: 1px solid;margin-bottom: 0.75em;}
+.header-con h1{flex-grow:1;margin:0}
+.header-con button{float: right; display: flex;margin: auto;}
+ul.planet-name{padding:0}
+ul.planet-name li{list-style:none;margin: 5px 0;padding:0;display: table; border-bottom: 1px solid;color:#0d3bef}
+ul.planet-name li:hover{cursor:pointer;color:#6c1d5f !IMPORTANT}
+input.input-custom{padding: .375rem .75rem;font-size: 1rem;line-height: 1.5;color: #495057; background-color: #fff;background-clip: padding-box;border: 1px solid #777;border-radius: .25rem;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.search-con { padding: 0.25em 1em; }
+.con-box,.con-desc{display:flex}
+.planet-model h3{border-bottom: 1px solid #000;margin: 0 0 10px;padding: 0.5em 0;}
+.left-head { flex: 1;}
+.right-head {flex: 2;display: flex;flex-wrap: wrap;}

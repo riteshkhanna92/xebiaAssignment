@@ -1,5 +1,6 @@
 export default {
     getUsers:"/people",
  
-     baseUrl:"https://swapi.co/api"
+     baseUrl:"https://swapi.co/api",
+     getUsersPlanets:"/planets/"
   };

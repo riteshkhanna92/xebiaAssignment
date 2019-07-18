@@ -1,7 +1,8 @@
 import  {ActionTypes} from './actions'
 const InitialState={
     usersData:"",
-    isAuthenticated:false
+    isAuthenticated:false,
+    planetData:""
    
      
 }
@@ -31,6 +32,14 @@ const appReducer=(state=InitialState,action)=>{
                     ...state,
                     usersData:"",
                     isAuthenticated:false,
+                   
+                }
+
+                case ActionTypes.LOAD_PLANET_DATA:
+                 
+                return {
+                    ...state,
+                    planetData:action.payload,
                    
                 }
                

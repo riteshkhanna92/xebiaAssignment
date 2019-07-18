@@ -38,8 +38,8 @@ handleSubmit(event) {
 
     let validateUser = (element)=> {
        
-        return ((element.name===this.state.username) 
-        &&( element.birth_year===this.state.password) )
+        return ((element.name==this.state.username) 
+        &&( element.birth_year==this.state.password) )
       };
       if(userData)
       {
@@ -62,8 +62,10 @@ handleSubmit(event) {
     
    const {username,password}=this.state
     return (
-      <div className="position-relative loginForm">
-        <Form onSubmit={this.handleSubmit}>
+      <div className="login-page">
+    <div className="form">
+      {/* <div className="position-relative loginForm"> */}
+        <Form onSubmit={this.handleSubmit} id="userForm">
           <div className="text-left">
             <label className="mb-1 login-label-txt">
               UserName
@@ -107,6 +109,7 @@ handleSubmit(event) {
           
         </Form>
         
+      </div>
       </div>
     );
   }
