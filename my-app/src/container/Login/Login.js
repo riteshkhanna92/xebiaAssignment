@@ -38,8 +38,8 @@ handleSubmit(event) {
 
     let validateUser = (element)=> {
        
-        return ((element.name==this.state.username) 
-        &&( element.birth_year==this.state.password) )
+        return ((element.name==this.state.username.trim()) 
+        &&( element.birth_year==this.state.password.trim()) )
       };
       if(userData)
       {
