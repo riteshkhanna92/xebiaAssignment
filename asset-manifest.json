@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/xebiaAssignment/static/css/main.bd76f0bc.chunk.css",
+    "main.js": "/xebiaAssignment/static/js/main.d6189774.chunk.js",
+    "main.js.map": "/xebiaAssignment/static/js/main.d6189774.chunk.js.map",
+    "runtime~main.js": "/xebiaAssignment/static/js/runtime~main.f48e18d7.js",
+    "runtime~main.js.map": "/xebiaAssignment/static/js/runtime~main.f48e18d7.js.map",
+    "static/js/2.856b7c56.chunk.js": "/xebiaAssignment/static/js/2.856b7c56.chunk.js",
+    "static/js/2.856b7c56.chunk.js.map": "/xebiaAssignment/static/js/2.856b7c56.chunk.js.map",
+    "index.html": "/xebiaAssignment/index.html",
+    "precache-manifest.108aa3fe8214b144cb04987c0fb47f31.js": "/xebiaAssignment/precache-manifest.108aa3fe8214b144cb04987c0fb47f31.js",
+    "service-worker.js": "/xebiaAssignment/service-worker.js",
+    "static/css/main.bd76f0bc.chunk.css.map": "/xebiaAssignment/static/css/main.bd76f0bc.chunk.css.map"
+  }
+}
