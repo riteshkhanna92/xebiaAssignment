@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://riteshkhanna92.github.io/xebiaAssignment",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-bootstrap": "^0.32.1",
